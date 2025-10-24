@@ -8,14 +8,14 @@ variable "project" {
     default = "roboshop"
 }
 
-
-variable "common_tags" {
-    type = map
-    default = {
-        Project = "roboshop"
-        Terraform = true
-    }
+variable "environment" {
+    type = string
 }
+
+variable "instance_type" {
+    type = string
+}
+
 
 variable "sg_name" {
     type    = string
